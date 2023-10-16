@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 
 const TodoList = () => {
-  const [todos, setTodos] = useState(()=>JSON.parse(localStorage.getItem('tod')));
+  const [todos, setTodos] = useState(()=>JSON.parse(localStorage.getItem('tod')) || []);
   //
   const [newTodo, setNewTodo] = useState("");
 
